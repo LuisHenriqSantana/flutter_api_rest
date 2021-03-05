@@ -8,16 +8,13 @@ class LoginForm extends StatefulWidget {
 }
 
 class _LoginFormState extends State<LoginForm> {
-
   GlobalKey<FormState> _formKey = GlobalKey();
-  String _email ='', _password ='';
+  String _email = '', _password = '';
 
-  _submit(){
+  _submit() {
     final isOk = _formKey.currentState.validate();
     print('form isOk');
-    if(isOk){
-      
-    }
+    if (isOk) {}
   }
 
   @override
@@ -28,7 +25,7 @@ class _LoginFormState extends State<LoginForm> {
       bottom: 30,
       child: Container(
         constraints: BoxConstraints(
-          maxWidth: responsive. isTablet? 430 : 360,
+          maxWidth: responsive.isTablet ? 430 : 360,
         ),
         child: Form(
           key: _formKey,
@@ -38,12 +35,12 @@ class _LoginFormState extends State<LoginForm> {
                 keyboardType: TextInputType.emailAddress,
                 label: 'EMAIL ADDRESS',
                 fontSize: responsive.dp(responsive.isTablet ? 1.2 : 1.4),
-                onChanged: (text){
+                onChanged: (text) {
                   _email = text;
                 },
-                validator: (text){
-                  if(!text.contains('@')){
-                    return 'Invalid email';
+                validator: (text) {
+                  if (!text.contains('@')) {
+                    return 'E-mail inválido!';
                   }
                   return null;
                 },
@@ -63,15 +60,16 @@ class _LoginFormState extends State<LoginForm> {
                         label: 'PASSWORD',
                         obscureText: true,
                         borderEnabled: false,
-                        fontSize: responsive.dp(responsive.isTablet ? 1.2 : 1.4),
-                        onChanged: (text){
+                        fontSize:
+                            responsive.dp(responsive.isTablet ? 1.2 : 1.4),
+                        onChanged: (text) {
                           _password = text;
                         },
-                        validator: (text){
-                          if(text.trim().length==0){
+                        validator: (text) {
+                          if (text.trim().length == 0) {
                             return 'Invalid password';
                           }
-                           return null;
+                          return null;
                         },
                       ),
                     ),
@@ -82,7 +80,8 @@ class _LoginFormState extends State<LoginForm> {
                           'Forgot Password',
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: responsive.dp(responsive.isTablet ? 1.2 : 1.5),
+                            fontSize:
+                                responsive.dp(responsive.isTablet ? 1.2 : 1.5),
                           ),
                         ))
                   ],
