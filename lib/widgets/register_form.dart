@@ -8,7 +8,6 @@ import 'package:flutter_api_rest/utils/dialogs.dart';
 import 'package:flutter_api_rest/utils/responsive.dart';
 import 'package:flutter_api_rest/widgets/input_text.dart';
 import 'package:get_it/get_it.dart';
-import 'package:logger/logger.dart';
 
 class RegisterForm extends StatefulWidget {
   @override

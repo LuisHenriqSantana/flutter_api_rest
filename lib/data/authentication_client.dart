@@ -4,7 +4,6 @@ import 'dart:convert';
 import 'package:flutter_api_rest/api/authentication_api.dart';
 import 'package:flutter_api_rest/models/authentication_response.dart';
 import 'package:flutter_api_rest/models/session.dart';
-import 'package:flutter_api_rest/utils/logs.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
 class AuthenticationClient {

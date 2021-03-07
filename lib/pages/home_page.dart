@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_api_rest/utils/logs.dart';
 import 'package:path/path.dart' as path;
 import 'package:flutter_api_rest/api/account_api.dart';
 import 'package:flutter_api_rest/data/authentication_client.dart';

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_api_rest/data/authentication_client.dart';
 import 'package:flutter_api_rest/pages/home_page.dart';
 import 'package:flutter_api_rest/pages/login_page.dart';
-import 'package:flutter_api_rest/utils/logs.dart';
 import 'package:get_it/get_it.dart';
 
 class SplashPage extends StatefulWidget {
